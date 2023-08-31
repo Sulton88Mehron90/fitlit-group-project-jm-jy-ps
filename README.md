@@ -7,6 +7,8 @@ The application provides up-to-date activity data, empowering users with insight
 
 FitLit operates on a local server environment and interacts with dedicated API endpoints to fetch and manipulate user-specific data. Moreover, FitLit supports user interactivity allowing users to add new hydration records and daily activity notes, which aids in further customizing their health-tracking experience.
 
+[DEPLOYED LINK](https://fitlit-group-project-jm-jy-ps.vercel.app/)
+
 ## Setup
 Fork and clone this [repo](https://github.com/judy0ye/fitlit-group-project-jy-jm-ps) 
 and then in a different folder, fork and clone this [local server repo](https://github.com/turingschool-examples/fitlit-api). -->

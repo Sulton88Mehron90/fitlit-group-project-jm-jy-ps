@@ -10,7 +10,7 @@ import './images/L2.jpg';
 import './images/L3.jpg';
 import './images/L4.jpg';
 import './images/L5.jpg';
-// import './images/User-info.jpg';
+import './images/User-info.jpg';
 import './images/FitChicks_scene_sm.png';
 import './images/hydration.png';
 import './images/sleep.png';
