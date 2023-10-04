@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h2,
@@ -89,11 +89,6 @@ img {
 .grid-layout, .grid-layout > * {
   margin: 0;
 }
-
-/* .logo, .greeting {
-  height: auto; 
-  padding: 2rem;
-} */
 
 .logo {
   grid-area: logo;
@@ -272,7 +267,7 @@ img {
   font-size: 1rem;
   padding: 13px 32px;
   text-decoration: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.9rem;
 }
 
 .activity-button {
