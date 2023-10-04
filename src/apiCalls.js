@@ -9,13 +9,13 @@
 /* ~~~~~ part2.Fetch Requests ~~~~~*/
 
 const fetchApiData = data => {
-  return fetch(`http://localhost:3001/api/v1/${data}`)
+  return fetch(`https://fitlit-api-fitchicks-9mqabcx0t-sulton88mehron90.vercel.app/api/v1/${data}`)
     .then(response => response.json())
     .catch(error => console.error('Error:', error));
 };
 
 const postSavedHydration = data => {
-  return fetch('http://localhost:3001/api/v1/hydration',
+  return fetch('https://fitlit-api-fitchicks-9mqabcx0t-sulton88mehron90.vercel.app/api/v1/hydration',
     {
       method: 'POST',
       body: JSON.stringify(data),
@@ -41,11 +41,7 @@ const postSavedHydration = data => {
     });
 };
 
-
 export {
   fetchApiData,
   postSavedHydration
 }
-
-
-
