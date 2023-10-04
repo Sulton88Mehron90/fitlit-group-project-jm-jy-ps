@@ -1,12 +1,14 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-};
+  overflow-x: hidden;
+}
 
 h2,
 .welcome {
-  font-weight:600;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 5px;
 }
 
 h2,
@@ -18,18 +20,20 @@ p,
 .goals,
 .motivation,
 .user-data,
-.data-view
- {
-  font-family: 'Poppins', sans-serif; 
+.data-view {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
 h3 {
   margin: 0;
+  font-size: 0.8rem;
 }
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 5rem;
+  margin-left: 2rem;
 }
 
 .activity,
@@ -44,66 +48,86 @@ img {
 /* ~~~~~ GRID COMPONENTS ~~~~~ */
 .grid-layout {
   display: grid;
-  height: 90vh;
-  width: 100vw;
-  grid-template-columns: 62% 38%;
-  grid-template-rows: 0.04fr 1.86fr;
+  height: 100vh;
+  width: 80vw;
   grid-template-areas:
     "logo greeting"
     "data-view-grid data-view-grid";
-  row-gap: 20px;
+  grid-template-rows: 0.03fr 1.97fr;
+  row-gap: 10px;
+  grid-template-columns: 78% 42%;
+  /* grid-template-columns: 1fr 1fr;  */
 }
 
 .data-view-grid {
   display: grid;
-  height: 90vh;
+  height: 100vh;
   width: 96vw;
   margin: 0 2vw;
-  grid-template-columns: 0.8fr 0.8fr 0.8fr 1.6fr;
-  grid-template-rows: 1.59fr .50fr 1.87fr;
   grid-template-areas:
     "activity hydration sleep data-view"
     "activity hydration sleep graphs"
     "goals motivation user-data graphs";
-  gap: 1% 1%
-}
-
-.logo {
-  grid-area: logo;
-  padding: 20px;
-  background-color: #25C1E3;
+  gap: 1% 1%;
+  grid-template-columns: 0.7fr 0.7fr 0.7fr 1.9fr;
+  grid-template-rows: 1.4fr .55fr 2.05fr;
+  border-radius: 10px;
+  /* transform: translateY(-20px); */
 }
 
 .header-quote {
   color: black;
   background-color: #C2FAFF;
-  padding: 0.5em;
-  font-size: 1.25rem;
-  max-width: 70%;
-  margin: 10px 0 0 4%;
+  padding: 1em;
+  font-size: 1rem;
+  max-width: 90%;
+  margin-left: 1rem;
   border: 3px solid white;
+}
+
+.grid-layout, .grid-layout > * {
+  margin: 0;
+}
+
+/* .logo, .greeting {
+  height: auto; 
+  padding: 2rem;
+} */
+
+.logo {
+  grid-area: logo;
+  padding: 0.1rem;
+  background-color: #25C1E3;
+  font-size: 0.8rem;
 }
 
 .greeting {
   grid-area: greeting;
-  padding: 10px 80px 20px 0;
+  padding: 2px 25px 5px 0;
   background-color: #25C1E3;
+  font-size: 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .personal-greeting {
   color: black;
   background-color: #C2FAFF;
-  padding: 0 0.75%;
-  font-size: 1.25rem;
-  min-width: 70%;
-  margin: 30px 4% 0 20%;
+  padding: 0 0.55%;
+  font-size: 1rem;
+  min-width: 50%;
+  margin: 10px 4% 0 10%;
   border: 3px solid white;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .welcome {
-  font-size: 2rem;
-  margin: 20px 0 0 0;
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .activity,
@@ -124,7 +148,7 @@ img {
 .sleep h2,
 .data-view h2,
 .goals h2,
-.motivation-card h2{
+.motivation-card h2 {
   align-self: center;
   margin-top: 20px;
   position: sticky;
@@ -136,8 +160,7 @@ img {
 #hydrationInfo,
 #dailySleep,
 #averageSleep,
-#start-date-input
- {
+#start-date-input {
   margin-top: 20px;
 }
 
@@ -175,11 +198,9 @@ img {
 }
 
 .graphs-bg-img {
-
   background-image: url('../images/FitChicks_scene_sm.png');
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
 }
 
 .goals {
@@ -201,9 +222,9 @@ img {
 
 .rounded-corner {
   border-radius: 12px;
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(51,51,51,1);
-  -moz-box-shadow: 0px 0px 2px 2px rgba(51,51,51,1);
-  box-shadow: 0px 0px 2px 2px rgba(51,51,51,1);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(51, 51, 51, 1);
+  box-shadow: 0px 0px 2px 2px rgba(51, 51, 51, 1);
 }
 
 /* ~~~~~ MOTIVATION CARD STYLES ~~~~~ */
@@ -234,55 +255,56 @@ img {
 .hydration-button.disable-button,
 .activity-button.disable-button {
   background-color: #EAEAF4;
-  cursor:not-allowed;
+  cursor: not-allowed;
 }
 
 .activity-button,
 .hydration-button,
 .sleep-button {
   box-shadow: 2px 2px 0px 0px #899599;
-  border-radius:21px;
-  border:2px solid #bdb7bd;
-  display:inline-block;
-  cursor:pointer;
-  color:#333333;
+  border-radius: 21px;
+  border: 2px solid #bdb7bd;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
   font-family: "Poppins";
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 13px 32px;
-  text-decoration:none;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
 }
 
 .activity-button {
-  background:linear-gradient(to bottom, #fbac92 5%, #dfcae3 100%);
-  background-color:#fbac92;
-  text-shadow:0px 0px 0px #e1e2ed;
+  background: linear-gradient(to bottom, #fbac92 5%, #dfcae3 100%);
+  background-color: #fbac92;
+  text-shadow: 0px 0px 0px #e1e2ed;
 }
 
 .activity-button:hover {
-  background:linear-gradient(to bottom, #dfcae3 5%, #fbac92 100%);
-  background-color:#dfcae3;
+  background: linear-gradient(to bottom, #dfcae3 5%, #fbac92 100%);
+  background-color: #dfcae3;
 }
 
 .hydration-button {
-  background:linear-gradient(to bottom, #9ce6f7 5%, #9ea1ab 100%);
-  background-color:#9ce6f7;
-  text-shadow:0px 0px 0px #e1e2ed;
+  background: linear-gradient(to bottom, #9ce6f7 5%, #9ea1ab 100%);
+  background-color: #9ce6f7;
+  text-shadow: 0px 0px 0px #e1e2ed;
 }
 
 .hydration-button:hover {
-  background:linear-gradient(to bottom, #9ea1ab 5%, #9ce6f7 100%);
-  background-color:#9ea1ab;
+  background: linear-gradient(to bottom, #9ea1ab 5%, #9ce6f7 100%);
+  background-color: #9ea1ab;
 }
 
 .sleep-button {
-  background:linear-gradient(to bottom, #9dfae9 5%, #c6d5e6 100%);
-  background-color:#9dfae9;
-  text-shadow:0px 0px 0px #e1e2ed;
+  background: linear-gradient(to bottom, #9dfae9 5%, #c6d5e6 100%);
+  background-color: #9dfae9;
+  text-shadow: 0px 0px 0px #e1e2ed;
 }
 
 .sleep-button:hover {
-  background:linear-gradient(to bottom, #c6d5e6 5%, #9dfae9 100%);
-  background-color:#c6d5e6;
+  background: linear-gradient(to bottom, #c6d5e6 5%, #9dfae9 100%);
+  background-color: #c6d5e6;
 }
 
 .visuallyhidden {
@@ -297,7 +319,7 @@ img {
 }
 
 .hidden {
-display: none!important;
+  display: none !important;
 }
 
 /* ~~~~~ MEDIA QUERIES ~~~~~ */
@@ -315,24 +337,28 @@ display: none!important;
       "logo greeting"
       "data-view-grid data-view-grid";
     row-gap: 20px;
-     }
-  
+  }
+
   .data-view-grid {
     display: grid;
-    height: 100vh;
+    height: auto; 
+    /* height: 100vh; */
     width: 96vw;
     margin: 0 2vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-      "activity hydration sleep"
-      "data-view graphs graphs"
-      "goals motivation user-data ";
+      "activity goals sleep data-view"
+      "activity goals sleep graphs"
+      "hydration motivation user-data graphs";
+    ;
     gap: 1% 1%
   }
+
   .logo img {
     max-width: 80%
   }
+
   .greeting {
     justify-content: center;
     align-items: center;
