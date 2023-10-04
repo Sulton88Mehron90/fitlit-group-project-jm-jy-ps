@@ -10,7 +10,7 @@ import './images/L2.jpg';
 import './images/L3.jpg';
 import './images/L4.jpg';
 import './images/L5.jpg';
-import userInfoImage from './images/User-info.jpg';
+// import userInfoImage from './images/User-info.jpg';
 import './images/FitChicks_scene_sm.png';
 import './images/hydration.png';
 import './images/sleep.png';
@@ -90,13 +90,14 @@ let users,
   sleepCurrentDate;
 
 /* ~~~~~~~~~~ EVENT LISTENERS ~~~~~~~~~~*/
-// Ensure the DOM is fully loaded before trying to access the element
-document.addEventListener('DOMContentLoaded', function() {
-  const userImageElement = document.getElementById("user-info-image");
-  if (userImageElement) {
-      userImageElement.src = userInfoImage;
-  }
-});
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const userImageElement = document.getElementById("user-info-image");
+//   if (userImageElement) {
+//       userImageElement.src = userInfoImage;
+//   }
+// });
+
 window.addEventListener('load', function () {
   Promise.all([
     fetchApiData('users'),
