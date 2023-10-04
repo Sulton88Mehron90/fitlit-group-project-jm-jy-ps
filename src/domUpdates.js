@@ -15,6 +15,9 @@ import {
   activeMinutesPerDay,
 } from './utils';
 
+import UserImage from './images/User-info.jpg';
+
+
 import {
   activity,
   hydration,
