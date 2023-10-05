@@ -34,6 +34,10 @@ h2 {
   font-weight: bold !important;
   font-size: 5px;
 }
+.user-name{
+  font-weight: 500;
+  font-size: 20px;
+}
 
 .welcome {
   font-weight: 500;
@@ -89,7 +93,7 @@ h3 {
 .motivation::-webkit-scrollbar,
 .user-data::-webkit-scrollbar {
     width: 3px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: solid 4px transparent;
 }
 
@@ -100,18 +104,11 @@ h3 {
 .motivation::-webkit-scrollbar-track,
 .user-data::-webkit-scrollbar-track {
     background-color:  #25C1E3;
+    border-radius: 18px;
     padding-top: 10% !important;
     padding-bottom: 10% !important;
-}
-
-.activity,
-.hydration,
-.sleep,
-.goals,
-.motivation,
-.user-data {
-    scrollbar-width: thin; 
-    scrollbar-color: #25C1E3 #F5F5F5;
+    border: solid 4px transparent;
+    width: 3px;
 }
 
 /* Universal settings for overflow */
