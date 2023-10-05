@@ -2,13 +2,54 @@ body,
 html {
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
+  margin-bottom: 50px; 
+  /* background-color: red; */
+}
+
+.activity, .goals {
+  margin-left: 20px !important;
+}
+
+.goals,
+.graphs,
+.motivation,
+.user-data {
+    margin-bottom: 20px !important;
+}
+
+.goals,
+.motivation,
+.user-data {
+    height: 300px;
+}
+
+.rounded-corner {
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6); 
+  -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);     
+  box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);       
 }
 
 h2,
 .welcome {
   font-weight: 500;
   font-size: 5px;
+}
+
+.parent-container-using-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
 h2,
@@ -22,18 +63,40 @@ p,
 .user-data,
 .data-view {
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 h3 {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
-img {
+.logo-img {
   max-width: 100%;
-  height: 5rem;
+  height: 50%;
   margin-left: 2rem;
+}
+
+.activity::-webkit-scrollbar,
+.hydration::-webkit-scrollbar,
+.sleep::-webkit-scrollbar,
+.goals::-webkit-scrollbar,
+.motivation::-webkit-scrollbar,
+.user-data::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 10px;
+    border: solid 4px transparent;
+}
+
+.activity::-webkit-scrollbar-track,
+.hydration::-webkit-scrollbar-track,
+.sleep::-webkit-scrollbar-track,
+.goals::-webkit-scrollbar-track,
+.motivation::-webkit-scrollbar-track,
+.user-data::-webkit-scrollbar-track {
+    background-color:  #25C1E3;
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
 }
 
 .activity,
@@ -42,7 +105,19 @@ img {
 .goals,
 .motivation,
 .user-data {
-  overflow: scroll visible;
+    scrollbar-width: thin; 
+    scrollbar-color: #25C1E3 #F5F5F5;
+}
+
+/* Universal settings for overflow */
+.activity,
+.hydration,
+.sleep,
+.goals,
+.motivation,
+.user-data {  
+    overflow-y: auto;
+    overflow-x: auto; 
 }
 
 /* ~~~~~ GRID COMPONENTS ~~~~~ */
@@ -57,7 +132,6 @@ img {
   grid-template-rows: 0.03fr 1.97fr;
   row-gap: 10px;
   grid-template-columns: 78% 42%;
-  /* grid-template-columns: 1fr 1fr;  */
 }
 
 .data-view-grid {
@@ -69,11 +143,11 @@ img {
     "activity hydration sleep data-view"
     "activity hydration sleep graphs"
     "goals motivation user-data graphs";
-  gap: 1% 1%;
+    gap: 2% 2%;
   grid-template-columns: 0.7fr 0.7fr 0.7fr 1.9fr;
   grid-template-rows: 1.4fr .55fr 2.05fr;
   border-radius: 10px;
-  /* transform: translateY(-20px); */
+  grid-template-rows: auto auto auto;
 }
 
 .header-quote {
@@ -84,6 +158,11 @@ img {
   max-width: 90%;
   margin-left: 1rem;
   border: 3px solid white;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .grid-layout, .grid-layout > * {
@@ -102,7 +181,7 @@ img {
   padding: 2px 25px 5px 0;
   background-color: #25C1E3;
   font-size: 0.8rem;
-  width: 100%;
+  width: 110%;
   box-sizing: border-box;
 }
 
@@ -110,12 +189,13 @@ img {
   color: black;
   background-color: #C2FAFF;
   padding: 0 0.55%;
-  font-size: 1rem;
-  min-width: 50%;
+  font-size: 0.7rem;
+  min-width: 10%;
   margin: 10px 4% 0 10%;
   border: 3px solid white;
   text-align: center;
   margin-top: 2rem;
+  margin-left: 20px !important;
 }
 
 .welcome {
@@ -148,6 +228,7 @@ img {
   align-self: center;
   margin-top: 20px;
   position: sticky;
+  font-weight: 500;
 }
 
 .activity-daily-steps,
