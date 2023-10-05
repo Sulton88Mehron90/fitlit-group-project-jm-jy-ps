@@ -272,7 +272,7 @@ h3 {
 .graphs {
   position: relative;
   grid-area: graphs;
-  max-height: 380px;
+  max-height: 410px;
 }
 
 .graphs-bg-img {
