@@ -43,7 +43,7 @@ Next: ```npm start``` in the terminal to see the HTML page
 
 ### Preview of App
 
-![fitlit_part2](https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/tree/main/src/images/fitchicks.gif)
+![fitlit_part2](https://raw.githubusercontent.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/main/src/images/fitchicks.gif)
 
   <h3 style="color:blue; display: inline;">
     Project Progress:
