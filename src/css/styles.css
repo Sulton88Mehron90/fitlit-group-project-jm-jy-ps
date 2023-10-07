@@ -288,13 +288,13 @@ h3 {
 
 .data-view {
   grid-area: data-view;
-  max-height: 400px;
+  height: 95%;
 }
 
 .graphs {
   position: relative;
   grid-area: graphs;
-  max-height: 400px;
+  height: 84%;
 }
 
 .graphs-bg-img {
