@@ -2,39 +2,51 @@ body,
 html {
   margin: 0;
   padding: 0;
-  margin-bottom: 50px; 
-  height: 100vh; 
+  margin-bottom: 50px;
+  height: 100vh;
 }
 
-.activity, .goals {
+.activity,
+.goals {
   margin-left: 20px !important;
+}
+
+.activity,
+.hydration,
+.sleep,
+.user-data,
+.motivation,
+.goals {
+  max-height: 360px;
+  overflow: auto;
 }
 
 .goals,
 .graphs,
 .motivation,
 .user-data {
-    margin-bottom: 20px !important;
+  margin-bottom: 20px !important;
 }
 
 .goals,
 .motivation,
 .user-data {
-    height: 300px;
+  height: 300px;
 }
 
 .rounded-corner {
   border-radius: 12px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6); 
-  -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);     
-  box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);       
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
+  box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
 }
 
 h2 {
   font-weight: bold !important;
   font-size: 5px;
 }
-.user-name{
+
+.user-name {
   font-weight: 500;
   font-size: 20px;
 }
@@ -54,7 +66,7 @@ h2 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
@@ -92,13 +104,13 @@ h3 {
 .goals::-webkit-scrollbar,
 .motivation::-webkit-scrollbar,
 .user-data::-webkit-scrollbar {
-    width: 4px;
-    border-radius: 20px;
-    border: solid 4px transparent;
-    padding-top: 20% !important;
-    padding-bottom: 20% !important;
-    margin: 20px auto;
-    padding: 20px;
+  width: 4px;
+  border-radius: 20px;
+  border: solid 4px transparent;
+  padding-top: 20% !important;
+  padding-bottom: 20% !important;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 .activity::-webkit-scrollbar-track,
@@ -107,14 +119,14 @@ h3 {
 .goals::-webkit-scrollbar-track,
 .motivation::-webkit-scrollbar-track,
 .user-data::-webkit-scrollbar-track {
-    background-color:  #25C1E3;
-    border-radius: 18px;
-    padding-top: 10% !important;
-    padding-bottom: 10% !important;
-    border: solid 4px transparent;
-    height: 3px !important;
-    margin: 40px auto;
-    padding: 20px;
+  background-color: #25C1E3;
+  border-radius: 18px;
+  padding-top: 10% !important;
+  padding-bottom: 10% !important;
+  border: solid 4px transparent;
+  height: 3px !important;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 /* Universal settings for overflow */
@@ -123,9 +135,9 @@ h3 {
 .sleep,
 .goals,
 .motivation,
-.user-data {  
-    overflow-y: auto;
-    overflow-x: auto; 
+.user-data {
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 /* ~~~~~ GRID COMPONENTS ~~~~~ */
@@ -133,12 +145,12 @@ h3 {
   display: grid;
   height: 100vh;
   width: 80vw;
-  margin: 0 3vw; 
+  margin: 0 3vw;
   grid-template-areas:
     "logo greeting"
     "data-view-grid data-view-grid";
-  grid-template-rows: 0.03fr 1.97fr;
-  row-gap: 10px;
+  grid-template-rows: 0.3fr 0.3fr 0.4fr;
+  row-gap: 20px;
   grid-template-columns: 78% 42%;
 }
 
@@ -151,11 +163,11 @@ h3 {
     "activity hydration sleep data-view"
     "activity hydration sleep graphs"
     "goals motivation user-data graphs";
-    gap: 2% 2%;
+  gap: 2% 2%;
   grid-template-columns: 0.7fr 0.7fr 0.7fr 1.9fr;
   grid-template-rows: 1.4fr .55fr 2.05fr;
   border-radius: 10px;
-  grid-template-rows: auto auto auto;
+  row-gap: 20px;
 }
 
 .header-quote {
@@ -173,7 +185,8 @@ h3 {
   text-align: center;
 }
 
-.grid-layout, .grid-layout > * {
+.grid-layout,
+.grid-layout>* {
   margin: 0;
 }
 
@@ -275,12 +288,13 @@ h3 {
 
 .data-view {
   grid-area: data-view;
+  max-height: 400px;
 }
 
 .graphs {
   position: relative;
   grid-area: graphs;
-  max-height: 410px;
+  max-height: 400px;
 }
 
 .graphs-bg-img {
@@ -434,7 +448,7 @@ h3 {
 
   .data-view-grid {
     display: grid;
-    height: auto; 
+    height: auto;
     width: 96vw;
     margin: 0 2vw;
     grid-template-columns: 1fr 1fr 1fr;
