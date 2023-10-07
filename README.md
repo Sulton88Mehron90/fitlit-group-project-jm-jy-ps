@@ -1,18 +1,18 @@
-  <h1 style="color:blue; display: inline;">
+<h1 style="color:blue; display: inline;">
     FitLit - FitChicks
-      <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/L4.jpg" 
-       alt="happy chick" 
-       width="50" 
-       style="vertical-align: middle; display: inline;" />
-     <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/default.jpg" 
-       alt="skeptical chick" 
-       width="50" 
-       style="vertical-align: middle; display: inline;" />
-      <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/L3.jpg" 
-       alt="know it all chick" 
-       width="50" 
-       style="vertical-align: middle; display: inline;" />
-  </h1>
+    <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/L4.jpg" 
+         alt="happy chick" 
+         width="50" 
+         style="vertical-align: middle; display: inline; border-radius: 50%; border: 2px solid light gray;" />
+    <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/default.jpg" 
+         alt="skeptical chick" 
+         width="50" 
+         style="vertical-align: middle; display: inline; border-radius: 50%; border: 2px solid light gray;" />
+    <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/L3.jpg" 
+         alt="know it all chick" 
+         width="50" 
+         style="vertical-align: middle; display: inline; border-radius: 50%; border: 2px solid light gray;" />
+</h1>
 
 ### Overview
 FitLit is a web application dedicated to delivering user-friendly and comprehensive dashboards that depict user's daily habits. These include sleep patterns, hydration levels, and physical activity metrics.
@@ -116,24 +116,24 @@ Javascript | Mocha & Chai | API | CSS | HTML
 
   <h6 style="color:blue; display: inline;">
     Challenges: 
-      <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/L1a.jpg" 
-       alt="un happy chick" 
-       width="50" 
-       style="vertical-align: middle; display: inline;" />
-  </h6>
+    <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/L1a.jpg" 
+         alt="unhappy chick" 
+         width="50" 
+         style="vertical-align: middle; display: inline; border-radius: 50%; border: 2px solid light gray;" />
+</h6>
  
  - None of us had ever used a GitHub Project Board before, so there was a learning curve that affected our early planning efforts. In hingsight, we did not spend enough time planning and pseudocoding and this led to several conflicts in the style and effectiveness of our functions and our ability to meet project deadlines.
  - None of us had ever used Figma, Days.js, or Charts.js, so we spent quite a bit of time researching these tools to see if they might be a more long-term effective solution to some of the application requirements.
  - A major challenge we faced was with setting up our functions to take in different data sets.
  - In our DTR document we were committed to ensuring that we would all understand everything that went into the development of the project. We did as much paired programming as we could and did our best to teach each other along the way, but the scope of the project meant that we had to divide our research efforts and there are pieces of the project that had to be managed by just one person. We will try to go over those pieces before the second part of the project begins.
 
-  <h6 style="color:blue; display: inline;">
+<h6 style="color:blue; display: inline;">
     Wins: 
-      <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/L5.jpg" 
-       alt="happy chick" 
-       width="50" 
-       style="vertical-align: middle; display: inline;" />
-  </h6>
+    <img src="https://github.com/Sulton88Mehron90/fitlit-group-project-jy-jm-ps/blob/main/src/images/L5.jpg" 
+         alt="happy chick" 
+         width="50" 
+         style="vertical-align: middle; display: inline; border-radius: 50%; border: 2px solid light gray;" />
+</h6>
 
 Part 1.
  - Working collaboratively within a group 3 developers.
